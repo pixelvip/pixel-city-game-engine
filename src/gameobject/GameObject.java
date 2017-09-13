@@ -42,7 +42,7 @@ public abstract class GameObject extends GameScript implements IGameObject {
 			BufferedImage newImage = ImageIO.read(resource);
 			image = scale(newImage);
 		} catch (IOException e) {
-			GameLogger.error("Image at path " + path + "could not be loaded.\nException: ", e);
+			GameLogger.error("Image at path " + path + " could not be loaded.\nException: ", e);
 		}
 	}
 	
